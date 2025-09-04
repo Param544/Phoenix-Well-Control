@@ -1,0 +1,357 @@
+
+* 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(30, 58, 138, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 90px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.logo-img {
+    height: 120px;  
+    width: auto;   
+    padding: 8px;
+    object-fit: contain;
+}
+
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+    margin-left: 5px; 
+}
+
+
+.logo-top {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+
+.logo-bottom {
+    font-size: 1.4rem; 
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 20px; 
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #ffbf00;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .logo-img {
+        height: 100px; 
+    }
+
+    .logo-top {
+        font-size: 1.5rem;
+    }
+
+    .logo-bottom {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 8px;
+    }
+}
+
+
+
+.hero-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    min-height: calc(40vh + 80px); 
+    padding-top: 160px; 
+}
+
+   
+.hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ffbf00;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #fcd34d;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1e3a8a;
+}
+
+.btn-secondary:hover {
+    background-color: #dbeafe;
+}
+
+
+
+.about-section {
+    background: #f8f9ff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.about-section .tagline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.about-section .intro {
+    font-size: 1.05rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #1e3a8a;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.graduates-box {
+    background: #e0f2fe;
+    padding: 20px;
+    margin: 25px auto 40px;
+    border-left: 6px solid #1e3a8a;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 700px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.graduates-box h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.graduates-box ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.graduates-box ul li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.stats h3 {
+    color: #1e3a8a;
+    font-size: 1.8rem;
+}
+
+
+
+.courses-section {
+    padding: 50px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    color: #1e3a8a;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+.benefits-section {
+    padding: 40px 5%;
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+
+.contact-section {
+    padding: 40px 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.contact-section a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
